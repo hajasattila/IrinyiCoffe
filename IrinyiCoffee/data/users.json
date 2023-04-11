@@ -1,0 +1,37 @@
+{
+    "7": {
+        "email": "admin@admin.hu",
+        "username": "admin",
+        "password": "$2y$10$SMVupaYj1Bd4T6kmPYKZU.K8YOKbJIONgg42G2sybamINHPuRTShm"
+    },
+    "8": {
+        "email": "attila@attila.com",
+        "username": "Atlasz",
+        "password": "$2y$10$\/\/5ud8BtQcf39A6d8lmAu.UM9qs9zGG6X94svStT4U92nDCExZTBW"
+    },
+    "9": {
+        "email": "Telefon@telefon.com",
+        "username": "AttilaTelefon",
+        "password": "$2y$10$uaCsSYsZ.\/jIIpntxjj.6.MrANghAoh18Mf07kEp\/avUymnly6PYi"
+    },
+    "10": {
+        "email": "hajasaaaatlasz@gmail.com",
+        "username": "TESTT",
+        "password": "$2y$10$Zp\/.EVErmgNh3e62h81AYufXk55TkxoZ1lE5zn64X\/YmSzJPWpZ8q"
+    },
+    "11": {
+        "email": "proba@proba.com",
+        "username": "pRoba",
+        "password": "$2y$10$gEEC1Mghmv61cvArmAUV2uDqzVu7Z4ysS1pNo0AOd5d5SQuPmt0sO"
+    },
+    "12": {
+        "email": "proooooba@gmail.com",
+        "username": "adminn",
+        "password": "$2y$10$xQP.1t3BsCFnz.6\/Cf3H5O8GECg\/Jki8sSigzgBckdZJe3X7Nzos6"
+    },
+    "13": {
+        "email": "hajaattila@gmail.com",
+        "username": "TEST",
+        "password": "$2y$10$oe8rgZorMPR9ZO77\/YvMaelUN9p7Tjwj6ksNaBJuoE.AUMdc2WJzG"
+    }
+}
