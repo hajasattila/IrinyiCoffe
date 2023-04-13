@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 session_start();
 
@@ -48,7 +49,7 @@ switch ($page) {
         break;
 }
 ?>
-<!DOCTYPE html>
+
 <html lang="hu">
 
 <head>
@@ -117,38 +118,34 @@ switch ($page) {
                 }
                 ?>
             </li>
+            <!-- Validálás miatt van csak kikommentelve, így nem működik telefonon -->
             <li>
                 <?php
                 if (!isset($_SESSION["username"])) {
                     ?>
-                    <a id="loginButton1" class="foglalj" <?php echo $page === "login" ? "class=active" : ""; ?>>Bejelentkezés</a>
+                    <a id="loginButton1" class="foglalj <?php echo $page === "login" ? "active" : ""; ?>">Bejelentkezés</a>
                     <?php
                 } else {
                     ?>
-                    <!-- <a href="index.php?logout" class="foglalj">Profilom</a> -->
-                    <a href="index.php?page=profile" class="foglalj" <?php echo $page === "profile" ? "class=active" : ""; ?>>Profil</a>
+                    <a href="index.php?page=profile"
+                        class="foglalj <?php echo $page === "profile" ? "active" : ""; ?>">Profil</a>
                     <?php
                 }
                 ?>
             </li>
         </ul>
-
         <div class="foglalas">
             <?php
             if (!isset($_SESSION["username"])) {
                 ?>
-                <a id="loginButton" <?php echo $page === "login" ? "class=active" : ""; ?>>Bejelentkezés</a>
+                <a id="loginButton" class="<?php echo $page === "login" ? "active" : ""; ?>">Bejelentkezés</a>
                 <?php
             } else {
                 ?>
-                <!-- Logout -->
-
-                <a href="index.php?page=profile" <?php echo $page === "profile" ? "class=active" : ""; ?>>Profil</a>
+                <a href="index.php?page=profile" class="<?php echo $page === "profile" ? "active" : ""; ?>">Profil</a>
                 <?php
             }
             ?>
-
-
         </div>
     </nav>
     <main>
@@ -159,7 +156,7 @@ switch ($page) {
                     <h5>Cookie</h5>
                     <p>Weboldalunk sütiket használ a jobb felhasználás érdekében.
                         <a href="index.php?page=cookie" class="tov-inf" target="_self">
-                            <?php echo $page === "cookie" ?> További információ↗
+                            <?php echo $page === "cookie" ?>További információ↗
                         </a>
                     </p>
                 </div>
@@ -178,7 +175,6 @@ switch ($page) {
         if (
             !isset($_SESSION["username"]) && ($page == "booking" || $page == "profile") || (!isset($_SESSION["username"]) && $page == "admin")
             || ($_SESSION["username"] !== "admin" && $page == "admin")
-            || (isset($_SESSION["username"]) && $_SESSION["username"] !== "admin" && $page == "register")
         ) {
             $page = "main";
         }
@@ -244,7 +240,7 @@ switch ($page) {
                         ?>
                     </div>
 
-                    <label for="password-label">Jelszó:</label>
+                    <label for="password">Jelszó:</label>
                     <div class="password-container">
                         <input type="password" name="password" id="password" class="login-outline-off">
                         <i class="fa fa-eye-slash" style="font-size:1.5rem;"></i>
@@ -266,9 +262,11 @@ switch ($page) {
 
 
     <!-- FOOTER START -->
-    <footer>
-        <p>Copyright © 2023 Irinyi Kávézó.</p>
-    </footer>
+    <?php if ($page != 'admin'): ?>
+        <footer>
+            <p>Copyright © 2023 Irinyi Kávézó.</p>
+        </footer>
+    <?php endif; ?>
     <!-- FOOTER END -->
 
     <!-- SCRIPTS START -->

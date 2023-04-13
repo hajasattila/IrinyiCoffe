@@ -1054,3 +1054,261 @@ hr {
     cursor: pointer;
     margin-bottom: 1.5rem;
 }
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 25rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 20rem;
+    }
+}
+
+.title {
+    color: grey;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #eb6b34;
+    margin-bottom: 1rem;
+}
+
+
+.logout {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 96%;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.logout:link {
+    text-decoration: none;
+}
+
+.logout:visited {
+    text-decoration: none;
+}
+
+.logout:hover {
+    text-decoration: none;
+}
+
+.logout:active {
+    text-decoration: none;
+}
+
+.logout:hover,
+a:hover {
+    opacity: 0.7;
+}
+
+.iras {
+    color: black;
+    font-weight: 900;
+    text-align: center;
+    justify-content: center;
+}
+
+.card h1,
+.card p {
+    color: #000;
+}
+
+.email,
+.pw,
+.pwchange h1 {
+    margin-bottom: 2rem;
+}
+
+.error {
+    margin: -5px 0 15px 0;
+    font-size: 15px;
+    color: red;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+form {
+    background: transparent;
+}
+
+.profile-img {
+    border-radius: 45%;
+    height: 15rem;
+    width: 75%;
+}
+
+h1 span {
+    font-size: 2.5rem;
+    font-weight: 900;
+    background: -webkit-linear-gradient(#ceae56, #000, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#profile-picture {
+    background-color: transparent;
+    transition: 0.5s ease;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    font-weight: 500;
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #205ee6;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+}
+
+.er {
+    color: red;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.checkbox-container {
+    display: flex;
+}
+
+.rules {
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.box {
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#admintable th,
+#admintable td {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: black;
+}
+
+#options {
+    color: black;
+    text-align: center;
+    width: 25%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#gomb {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+}
+
+
+.heading {
+    color: #666666;
+    text-align: center;
+}
+
+.container {
+    width: 40rem;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 20rem;
+    }
+}
+
+.button-group {
+    margin-bottom: 20px;
+}
+
+.counter {
+    display: inline;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+    color: black;
+}
+
+.posts {
+    clear: both;
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.posts li {
+    background-color: #fff;
+    border: 1.5px solid #d8d8d8;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    min-height: 42px;
+    box-shadow: 8px 8px 5px #888888;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    color: black;
+}
+
+textarea {
+    resize: none;
+    background-color: #d8d8d8;
+}
+
+textarea:focus {
+    outline: none;
+}

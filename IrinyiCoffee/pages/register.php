@@ -1,31 +1,8 @@
-<head>
-    <style>
-        .error {
-            color: red;
-        }
-
-        .checkbox-container {
-            display: flex;
-        }
-
-        .rules {
-            color: black;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            font-weight: 700;
-            margin: 0 auto;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-    </style>
-</head>
 <header id="home">
     <h1>Regisztrálj és foglalj asztalt!</h1>
     <p>Pár kattintás, és már kész is!</p>
 </header>
+
 <div class="main-content">
     <h1 style="margin-top:5rem; color:red;text-align:center;">
         <strong>Figyelem!</strong> A <span class="required">*</span>-al jelölt mezők kitöltése kötelező!
@@ -54,12 +31,12 @@
     class User
     {
         public $email;
-        public $username;
+        public $usernameClass;
         public $password;
     }
 
     // Amennyiben a felhasználó be van jelentkezve, átirányítjuk a bemutatkozás oldalra
-    if (isset($_SESSION["username"]))
+    if (isset($_SESSION["username"]) && $_SESSION["username"] !== "admin")
         header("Location: index.php?page=booking");
 
     $errors = [];
@@ -123,7 +100,7 @@
             $user = new User();
             // Hozzunk létre egy tömböt, majd rakjuk bele a megadott adatokat
             $user->email = trim($email) !== "" ? $email : "-";
-            $user->username = $username;
+            $user->usernameClass = $username;
             $user->password = $password;
             // Adjuk hozzá az új felhasználót a users tömbhöz
             $users[] = (array) $user;
@@ -153,9 +130,9 @@
 
 
                 </div>
-                <label for="username-label">Felhasználónév<span class="required">*</span>:</label>
-                <input type="text" name="username" id="username-label" maxlength="16" placeholder="MintaPéter" value="<?php if (isset($_POST["username"]))
-                    echo $_POST["username"]; ?>">
+                <label for="username-input">Felhasználónév<span class="required">*</span>:</label>
+                <input type="text" name="username" id="username-input" maxlength="16" placeholder="MintaPéter" value="<?php if (isset($_POST["username"]))
+                    echo htmlspecialchars($_POST["username"]); ?>">
                 <div class="error">
                     <?php
 

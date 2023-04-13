@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 // Get the modal
 var modal = document.getElementById("myModal");
 var regimodal = document.getElementById("registration")
