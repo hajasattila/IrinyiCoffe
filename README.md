@@ -1,8 +1,8 @@
 # IrinyiCoffe
-## SZTE Webtervezés gy. kurzus kötporg feladat megoldása!
+## SZTE Webtervezés gy. kurzus kötporg feladat megoldásom!
 
-### Két mérföldkövet kellett teljesíteni 2 fős csoportban, ahol egy fikcionális weboldalt készítünk.
-**A mi választott témánk egy kávéző oldal lett.**
+### Két mérföldkövet kellett teljesíteni, ahol egy fikcionális weboldalt készítünk.
+**A választott téma egy kávéző oldal lett.**
 
 ### Az oldalon különböző jogosultságok vannak kiosztva:
 * Guest
